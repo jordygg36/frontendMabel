@@ -1,0 +1,62 @@
+<div class="fb-container">
+  <!-- Barra superior (Header) -->
+  <div class="fb-header">
+    <div class="logo">ECO</div>
+    <div class="search-bar">
+      <input type="text" placeholder="Buscar en ECO" />
+    </div>
+    <div class="header-icons">
+      <span class="material-icons">Inicio</span>
+      <span class="material-icons">Grupos</span>
+      <span class="material-icons">Notificaciones</span>
+      <span class="material-icons">Configuracion</span>
+    </div>
+  </div>
+
+  <!-- Contenido principal -->
+  <div class="fb-content">
+    <!-- Menú lateral izquierdo -->
+    <div class="fb-sidebar-left">
+      <ul>
+        <li>Inicio</li>
+        <li>Amigos</li>
+        <li>Grupos</li>
+        <!-- Botón para redirigir a Marketplace -->
+        <li><button>Marketplace</button></li>
+        <li>Páginas</li>
+      </ul>
+    </div>
+
+    <!-- Área de publicaciones -->
+    <div class="fb-main-feed">
+      <div class="post-box">
+        <!-- textarea donde se escribe el post -->
+        <textarea id="postContent" placeholder="¿Qué estás pensando?"></textarea>
+        <!-- Botón para publicar -->
+        <button onclick="document.getElementById('postContent').value = '';">Publicar</button>
+      </div>
+      <div class="post">
+        <div class="post-header">
+          <strong>One Direction</strong> publicó:
+        </div>
+        <div class="post-body">
+          ¡Mundo enfermo y triste!.
+        </div>
+      </div>
+    </div>
+
+    <!-- Menú lateral derecho -->
+    <div class="fb-sidebar-right">
+      <h4>Amigos conectados</h4>
+      <ul>
+        <li>Harry Styles</li>
+        <li>Louis Tomlinson</li>
+        <li>Jackson Wang</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Este es el lugar adecuado para el router-outlet -->
+  <router-outlet></router-outlet>
+</div>
+

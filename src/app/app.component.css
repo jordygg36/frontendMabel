@@ -1,0 +1,153 @@
+/* Contenedor principal de toda la página */
+.fb-container {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Estilo para el header (barra superior) */
+  .fb-header {
+    background-color: #3ad76e;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+  }
+  
+  .fb-header .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .fb-header .search-bar input {
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: none;
+    width: 250px;
+  }
+  
+  .fb-header .header-icons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .fb-header .header-icons .material-icons {
+    cursor: pointer;
+    font-size: 28px;
+  }
+  
+  /* Contenedor principal para el contenido */
+  .fb-content {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+    background-color: #f0f2f5;
+  }
+  
+  /* Menú lateral izquierdo */
+  .fb-sidebar-left {
+    width: 250px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  
+  .fb-sidebar-left ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .fb-sidebar-left ul li {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #e4e6eb;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .fb-sidebar-left ul li:hover {
+    background-color: #d8dadf;
+  }
+  
+  /* Área principal para las publicaciones */
+  .fb-main-feed {
+    flex: 1;
+    margin: 0 20px;
+  }
+  
+  .post-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .post-box textarea {
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  .post-box button {
+    align-self: flex-end;
+    padding: 8px 12px;
+    background-color: #35eb72;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .post-box button:hover {
+    background-color: #36996b;
+  }
+  
+  .post {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .post-header {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Menú lateral derecho */
+  .fb-sidebar-right {
+    width: 250px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  
+  .fb-sidebar-right h4 {
+    margin-bottom: 10px;
+  }
+  
+  .fb-sidebar-right ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .fb-sidebar-right ul li {
+    padding: 10px;
+    background-color: #e4e6eb;
+    margin: 5px 0;
+    border-radius: 5px;
+  }
+  
+  .fb-sidebar-right ul li:hover {
+    background-color: #d8dadf;
+  }
+  
